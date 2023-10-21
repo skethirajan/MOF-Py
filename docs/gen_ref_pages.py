@@ -16,6 +16,8 @@ for path in sorted(Path("src").rglob(pattern="*.py")):
 
     if parts[-1] == "__init__":
         parts = parts[:-1]
+        doc_path = doc_path.with_name("index.md")
+        full_doc_path = full_doc_path.with_name("index.md")
     elif parts[-1] == "__main__":
         continue
 
@@ -23,7 +25,7 @@ for path in sorted(Path("src").rglob(pattern="*.py")):
 
     with mkdocs_gen_files.open(full_doc_path, "w") as fd:
         IDENT = ".".join(parts)
-        fd.write(f":::  {IDENT}")
+        fd.write(f"::: {IDENT}")
 
     mkdocs_gen_files.set_edit_path(full_doc_path, Path("../") / path)
 

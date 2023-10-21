@@ -1,6 +1,6 @@
 # Docs
 .cache/
-docs/reference/*
+docs/reference/
 *doctrees*
 /site
 
