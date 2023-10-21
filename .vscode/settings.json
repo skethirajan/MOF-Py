@@ -1,0 +1,50 @@
+{
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.formatOnType": true,
+        "editor.wordBasedSuggestions": false,
+        "gitlens.codeLens.symbolScopes": [
+            "!Module"
+        ],
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.inlayHints.callArgumentNames": "partial",
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.pytestParameters": true,
+    "python.analysis.autoFormatStrings": true,
+    "editor.semanticTokenColorCustomizations": {
+        "[One Dark Pro]": { // Apply to this theme only
+            "enabled": true,
+            "rules": {
+                "magicFunction:python": "#ee0000",
+                "function.declaration:python": "#990000",
+                "*.decorator:python": "#0000dd",
+                "*.typeHint:python": "#5500aa",
+                "*.typeHintComment:python": "#aaaaaa"
+            }
+        }
+    },
+    "explorer.fileNesting.enabled": true,
+    "files.exclude": {
+        "**/.bash_history": false,
+        "**/.bash_logout": false,
+        "**/.dbus": false,
+        "**/.dotnet": false,
+        "**/.git": false,
+        "**/.gnuplot*": false,
+        "**/.ipynb_checkpoints": false,
+        "**/.ipython*": false,
+        "**/.jupyter": false,
+        "**/.keras": false,
+        "**/.landscape": false,
+        "**/.motd_shown": false,
+        "**/.nv": false,
+        "**/.sudo_as_admin_successful": false
+    },
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": null,
+    "notebook.formatOnCellExecution": true,
+}
